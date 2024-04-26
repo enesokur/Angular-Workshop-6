@@ -78,6 +78,7 @@ export class UpdateBrandFormComponent implements OnInit {
     console.log(this.form);
     if (this.form.invalid) {
       console.error('form is invalid');
+      return;
     }
     this.updateBrand();
     this.router.navigate(['/home/brands']);

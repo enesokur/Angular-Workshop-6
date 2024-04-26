@@ -9,11 +9,12 @@ import { BrandsApiService } from '../../services/brands-api.service';
 import { PostBrandRequest } from '../../models/post-brand-request';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
+import { WelcomeDirective } from '../../../../core/directives/welcome.directive';
 
 @Component({
   selector: 'app-create-brand-form',
   standalone: true,
-  imports: [CommonModule, RouterModule, ReactiveFormsModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule,WelcomeDirective],
   templateUrl: './create-brand-form.component.html',
   styleUrl: './create-brand-form.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
